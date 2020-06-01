@@ -52,3 +52,25 @@ regressor_OLS.summary()
 X_opt = X[:, [0, 3]]
 regressor_OLS = sm.OLS(endog=y, exog=X_opt).fit()
 regressor_OLS.summary()
+
+
+"""Regression Evaluation Metrics
+Here are three common evaluation metrics for regression problems:
+
+Mean Absolute Error (MAE) is the mean of the absolute value of the errors:
+
+1n∑i=1n|yi−y^i| 
+
+Mean Squared Error (MSE) is the mean of the squared errors:
+
+1n∑i=1n(yi−y^i)2 
+
+Root Mean Squared Error (RMSE) is the square root of the mean of the squared errors:
+
+1n∑i=1n(yi−y^i)2−−−−−−−−−−−−√ 
+
+Comparing these metrics:
+
+MAE is the easiest to understand, because it's the average error.
+MSE is more popular than MAE, because MSE "punishes" larger errors, which tends to be useful in the real world.
+RMSE is even more popular than MSE, because RMSE is interpretable in the "y" units."""
