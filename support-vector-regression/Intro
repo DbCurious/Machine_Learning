@@ -1,0 +1,11 @@
+Support Vector regression is a type of Support vector machine that supports linear and non-linear regression. 
+Support vector regression (SVR) is a statistical method that examines the linear relationship between two continuous variables.
+We define a small error value e (error = prediction - actual). The value of e determines the number of support vectors, and a smaller e value indicates a lower tolerance for error.
+Terms:
+   1.Kernel
+      A kernel is a set of mathematical functions. This kernel function takes data as input and transforms it into the form required by the output. 
+      A few examples of kernels used in SVM are linear and radial basis function (RBF) kernels.
+      
+   2.Hyperplane
+      A hyperplane is a subspace that has one less dimension than that of its surrounding space. For example, with a two-dimensional space, the hyperplane will be one dimensional (i.e. a line).
+      For a three-dimensional space, the hyperplane will be two-dimensional (i.e. a plane).  
