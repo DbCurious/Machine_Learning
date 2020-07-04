@@ -1,0 +1,22 @@
+Random-forest-regression
+   a.A Random Forest is a Supervised Learning algorithm  which uses ensemble learning(A model comprised of many models is called an Ensemble model) technique capable of 
+     performing both regression and classification tasks with the use of multiple decision trees.
+   b.It operates by constructing a multitude of decision trees at training time and outputting the class that is the mode of the classes (classification) or 
+     mean prediction (regression) of the individual trees.  
+   c.The basic idea behind this is to combine multiple decision trees in determining the final output rather than relying on individual decision trees. 
+   d.Types of Ensemble Learning:
+      1.Boosting.
+      2.Bootstrap Aggregation (Bagging).
+   e.Random forest is a bagging technique and not a boosting technique. The trees in random forests are run in parallel.
+     There is no interaction between these trees while building the trees.   
+     
+     #Fitting Random forest regressor to the dataset
+     # Fitting Random Forest Regression to the dataset 
+     # import the regressor 
+     from sklearn.ensemble import RandomForestRegressor 
+
+     # create regressor object 
+     regressor = RandomForestRegressor(n_estimators = 100, random_state = 0) 
+
+     # fit the regressor with x and y data 
+     regressor.fit(x, y) 
