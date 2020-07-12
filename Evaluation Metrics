@@ -1,0 +1,39 @@
+--Most important parameters:--
+
+a.True Positives (TP) - These are the correctly predicted positive values which means that the value of actual class is yes and the value of predicted class is also yes.
+  E.g. if actual class value indicates that this passenger survived and predicted class tells you the same thing.
+  
+b.True Negatives (TN) - These are the correctly predicted negative values which means that the value of actual class is no and value of predicted class is also no. 
+  E.g. if actual class says this passenger did not survive and predicted class tells you the same thing.  
+  
+---False positives and false negatives, these values occur when your actual class contradicts with the predicted class.---
+  
+c.False Positives (FP) – When actual class is no and predicted class is yes. 
+  E.g. if actual class says this passenger did not survive but predicted class tells you that this passenger will survive. 
+  
+d.False Negatives (FN) – When actual class is yes but predicted class in no.
+  E.g. if actual class value indicates that this passenger survived and predicted class tells you that passenger will die.  
+
+
+1. Accuracy, Precision, and Recall:
+
+  A. Accuracy
+     1.Accuracy is the most intuitive performance measure and it is simply a ratio of correctly predicted observation to the total observations.
+     2.Accuracy is a valid choice of evaluation for classification problems which are well balanced and not skewed or No class imbalance.
+       Accuracy = (TP+TN)/(TP+FP+FN+TN)
+       
+  B. Precision 
+     1.Precision is the ratio of correctly predicted positive observations to the total predicted positive observations. 
+     2.Precision helps when the costs of false positives are high.
+       Precision =( TP/TP+FP)
+       
+  C. Recall
+     1.Of all the records which are actually positive, what fraction did we correctly predicted as positive?     
+       Recall=(TP/TP+FN)
+     2.It is a very common situation where we end up with a model where either Precision is high and Recall is low or vice versa.
+       It becomes a little difficult with two metrics to evaluate the model and say which is better.  
+       
+       
+2.Confusion Matrix:    
+      A confusion matrix is a table that is often used to describe the performance of a classification model (or "classifier") on a set of test data for which the 
+      true values are known      
