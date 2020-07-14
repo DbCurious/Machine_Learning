@@ -1,0 +1,19 @@
+Polynomial regression
+   1.Polynomial regression is a special case of linear regression where we fit a polynomial equation on the data with a curvilinear relationship between the 
+     target variable and the independent variables.
+   2.Polynomial regression, like linear regression, uses the relationship between the variables x and y to find the best way to draw a line through the data points.
+    
+   3.Import numpy and matplotlib to draw the line of Polynomial Regression:
+    import numpy
+    import matplotlib.pyplot as plt
+
+    x = [1,2,3,5,6,7,8,9,10,12,13,14,15,16,18,19,21,22]
+    y = [100,90,80,60,60,55,60,65,70,70,75,76,78,79,90,99,99,100]
+
+    mymodel = numpy.poly1d(numpy.polyfit(x, y, 3))
+
+    myline = numpy.linspace(1, 22, 100)
+
+    plt.scatter(x, y)
+    plt.plot(myline, mymodel(myline))
+    plt.show()
