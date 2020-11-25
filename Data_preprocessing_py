@@ -1,3 +1,5 @@
+# this code is a general templete that can be used for data-processing in regression problems
+
 # Importing libraries
 # -------------------
 import numpy as np
